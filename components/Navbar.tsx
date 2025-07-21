@@ -24,24 +24,21 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div 
+    <div
       className={`sticky top-0 z-50 px-5 md:px-8 xl:px-14 pt-1 pb-3 transition-all duration-500 ${
-        scrolled 
-          ? "bg-[#0D1117] shadow-lg border-b border-[#1a3a5f]" 
+        scrolled
+          ? "bg-[#0D1117] shadow-lg border-b border-[#1a3a5f]"
           : "bg-transparent"
       }`}
     >
       <div className="relative flex items-center justify-between py-1">
         {/* Logo */}
         <div className="flex items-center">
-          <Image 
-            src={logo} 
-            alt="Dodix Tech Logo" 
+          <Image
+            src={logo}
+            alt="Dodix Tech Logo"
             className="size-10 sm:size-12"
           />
-          <span className="ml-2 text-white text-xl font-bold hidden sm:block">
-            Dodix<span className="text-[#269ca1]">Tech</span>
-          </span>
         </div>
 
         {/* Desktop Links */}
@@ -52,10 +49,26 @@ const Navbar = () => {
         {/* Desktop Icons */}
         <div className="hidden md:flex items-center space-x-3">
           {[
-            { icon: <FaFacebook size={18} />, color: "hover:text-[#4267B2]", href: "https://www.facebook.com/Bolt.Solutions2" },
-            { icon: <FaInstagram size={18} />, color: "hover:text-[#E1306C]", href: "https://www.instagram.com/your_instagram" },
-            { icon: <FaLinkedin size={18} />, color: "hover:text-[#0A66C2]", href: "https://www.linkedin.com/company/bolt-solutions2/" },
-            { icon: <FaTiktok size={18} />, color: "hover:text-[#000000]", href: "https://www.tiktok.com/@your_tiktok" },
+            {
+              icon: <FaFacebook size={18} />,
+              color: "hover:text-[#4267B2]",
+              href: "https://www.facebook.com/Bolt.Solutions2",
+            },
+            {
+              icon: <FaInstagram size={18} />,
+              color: "hover:text-[#E1306C]",
+              href: "https://www.instagram.com/your_instagram",
+            },
+            {
+              icon: <FaLinkedin size={18} />,
+              color: "hover:text-[#0A66C2]",
+              href: "https://www.linkedin.com/company/bolt-solutions2/",
+            },
+            {
+              icon: <FaTiktok size={18} />,
+              color: "hover:text-[#000000]",
+              href: "https://www.tiktok.com/@your_tiktok",
+            },
           ].map((social, index) => (
             <a
               key={index}
@@ -88,10 +101,26 @@ const Navbar = () => {
           {/* Mobile Icons */}
           <div className="flex items-center justify-start gap-x-4 text-xl mt-6">
             {[
-              { icon: <FaFacebook size={20} />, color: "hover:text-[#4267B2]", href: "https://www.facebook.com/Bolt.Solutions2" },
-              { icon: <FaInstagram size={20} />, color: "hover:text-[#E1306C]", href: "https://www.instagram.com/your_instagram" },
-              { icon: <FaLinkedin size={20} />, color: "hover:text-[#0A66C2]", href: "https://www.linkedin.com/company/bolt-solutions2/" },
-              { icon: <FaTiktok size={20} />, color: "hover:text-[#000000]", href: "https://www.tiktok.com/@your_tiktok" },
+              {
+                icon: <FaFacebook size={20} />,
+                color: "hover:text-[#4267B2]",
+                href: "https://www.facebook.com/Bolt.Solutions2",
+              },
+              {
+                icon: <FaInstagram size={20} />,
+                color: "hover:text-[#E1306C]",
+                href: "https://www.instagram.com/your_instagram",
+              },
+              {
+                icon: <FaLinkedin size={20} />,
+                color: "hover:text-[#0A66C2]",
+                href: "https://www.linkedin.com/company/bolt-solutions2/",
+              },
+              {
+                icon: <FaTiktok size={20} />,
+                color: "hover:text-[#000000]",
+                href: "https://www.tiktok.com/@your_tiktok",
+              },
             ].map((social, index) => (
               <a
                 key={index}
